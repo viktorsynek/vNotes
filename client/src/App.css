@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Fredoka&family=Nunito+Sans:opsz,wght@6..12,600&family=Roboto&family=Space+Mono&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+*/
+
+:root {
+	--first-font: 'Roboto', sans-serif;
+	--second-font: 'Space Mono', monospace;
+	--third-font: 'Fredoka', sans-serif;
+	--fourth-font: 'Nunito Sans', sans-serif;
+	--fifth-font: 'Barlow Condensed', sans-serif;
+}
+
+:root {
+	--clr-light: #fefefe;;
+	--clr-dark: #000;
+	--clr-ascent: #172554;
+
+	--foreground: var(--clr-dark);
+	--background: var(--clr-light);
+	--ascent: var(--clr-ascent);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden !important;
+	white-space: nowrap;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--first-font);
+	font-weight: 600;
+}
+
+.error {
+	margin-top: 250px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.error h1 {
+	color: #c91010c4;
+	font-size: 32px;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+
+.error span {
+	color: #e75050;
+}
+
+.error a {
+	color: var(--foreground);
+	font-size: 36px;
+	text-decoration: none;
+	font-family: var(--third-font);
+	transition: all ease-in-out .3s;
+}
+
+.error a:hover {
+	color: var(--ascent);
+}
+
+
