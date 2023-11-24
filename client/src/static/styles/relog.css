@@ -1,0 +1,202 @@
+.login, .register {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 450px;
+    border: 1px solid var(--foreground);
+    background-color: var(--background);
+    border-radius: 15px;
+}
+
+.password {
+    margin-top: 150px;
+}
+
+.register {
+    top: 475px;
+    width: 450px;
+    height: 655px;
+}
+
+h1{
+    text-align: center;
+    color: var(--ascent);
+    font-size: 22px;
+    font-family: var(--second-font);
+    font-weight: 900;
+    text-decoration: underline;
+}
+h4{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+form {
+    margin: 0 auto;
+}
+
+form * {
+    display: block;
+}
+
+form input {
+    background-color: var(--background);
+    border: 1.5px solid var(--foreground);
+    color: var(--foreground);
+    border-radius: 1px;
+    width: 250px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+form input[type="password"]
+{
+    margin-bottom: 30px;
+}
+
+p {
+    color: var(--foreground);
+}
+
+form input[type="submit"] {
+    width: 275px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 18px;
+    color: var(--foreground);
+    background: var(--background);
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: all ease-in-out 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+.forgot_pw a {
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--foreground);
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--third-font);
+    transition: all ease-in-out 0.3s;
+}
+
+.forgot_pw a:hover {
+    text-decoration: underline;
+    color: var(--ascent);
+    cursor: pointer;
+}
+
+.line-break {
+    background-color: var(--foreground);
+    opacity: 50%;
+    width: 65%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.signup_link p, .login_link p {
+    display: inline;
+    margin-top: 15px;
+    text-align: center;
+    opacity: 70%;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.signup_link a, .login_link a{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--foreground);
+    font-weight: 700;
+    font-family: var(--third-font);
+    transition: all ease-in-out 0.3s;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+}
+
+.signup_link a:hover, .login_link a:hover {
+    text-decoration: underline;
+    color: var(--ascent);
+    cursor: pointer;
+}
+
+.error-message {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f15174;
+    font-size: 10px;
+    margin-left: -25px;
+}
+
+.error-msg {
+    font-family: var(--third-font);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 800px;
+    max-height: 100px;
+    background-color: #ffcfcf;
+    color: rgb(241, 81, 81);
+    z-index: 5;
+    border: 1px solid #ffcfcf;
+    border-radius: 10px;
+    padding: 10px;
+    word-spacing: 1px;
+    white-space: wrap;
+    text-align:justify;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+  
