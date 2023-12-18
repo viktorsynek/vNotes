@@ -1,0 +1,53 @@
+.notes {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    margin: 25px;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.note h2 {
+    color: var(--ascent);
+    font-family: var(--second-font);
+    text-align: center;
+}
+
+.note p {
+    white-space: normal;
+}
+
+.note-line {
+    height: 1px;
+    width: 400px;
+    background-color: grey;
+}
+
+.create {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    margin-top: 50px;
+}
+
