@@ -3,19 +3,20 @@ import logo from '../static/assets/logo.png';
 import '../static/styles/navbar.css';
 import '../App.css';
 import React from 'react';
-let logged = false;
+let logged = true;
 
 const Navbar = () => {
     return (
         <>
             <div className="navbar">
                 <div className="logo">
-                    <img src={logo} alt="logo" width={30} />Todo
+                    <img src={logo} alt="logo" width={30} />Notes
                 </div>
                 <ul className="links">
                 {logged ? (
                     <>
-                        <li><Link to="/create">Create New</Link></li>
+                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/create">Create</Link></li>
                         <li><Link to="/logout">Log out</Link></li>
                     </>
                     ) : (
